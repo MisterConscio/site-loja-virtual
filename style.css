@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: green;
+  color: white;
+  padding: 12px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.15em;
+}
+
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  border-bottom: 4px solid lightgreen;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+#sobre .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#sobre article {
+  margin-left: 36px;
+}
+
+#sobre p {
+  text-align: justify;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.item-produtos {
+  padding: 8px;
+}
+
+.item-produtos h3 {
+  margin: 24px 0;
+  font-size: 1.25em;
+}
+
+.item-produtos p {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+.item-produtos button {
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  animation: hover 1s ease;
+}
+
+.item-produtos button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 90%;
+  }
+
+  #sobre .container {
+    grid-template-columns: auto;
+  }
+
+  #sobre article {
+    margin-left: 0;
+  }
+
+  #sobre article h2 {
+    margin-top: 36px;
+  }
+
+  .grid-produtos {
+    grid-template-columns: auto;
+  }
+
+  .item-produtos {
+    margin-bottom: 32px;
+  }
+
+  header ul li {
+    margin-left: 0;
+    text-align: right;
+  }
+
+  header ul li a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 85%;
+  }
+
+  #sobre .container {
+    grid-template-columns: auto;
+  }
+
+  #sobre article {
+    margin-left: 0;
+  }
+
+  #sobre article h2 {
+    margin-top: 36px;
+  }
+
+  .grid-produtos {
+    grid-template-columns: 50% 50%;
+  }
+}
