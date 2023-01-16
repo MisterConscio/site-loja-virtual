@@ -1,1 +1,1 @@
-# Site virtual utilizando layout responsivo
+# Site de loja virtual utilizando layout responsivo
